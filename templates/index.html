@@ -213,3 +213,175 @@ document
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```html
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #edf2ff, #fff0f5);
+    color: #26364a;
+    min-height: 100vh;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: white;
+    padding: 35px 15px;
+    margin: 0 0 30px;
+    background: linear-gradient(120deg, #6a11cb, #2575fc, #00bfa6);
+    font-size: 34px;
+    letter-spacing: 1px;
+    box-shadow: 0 5px 20px rgba(60, 70, 180, 0.25);
+}
+
+/* Form card */
+#predictionForm {
+    max-width: 850px;
+    margin: 0 auto 30px;
+    padding: 35px;
+    background: rgba(255, 255, 255, 0.96);
+    border-radius: 22px;
+    border: 1px solid #dce6ff;
+    box-shadow: 0 12px 35px rgba(56, 75, 130, 0.15);
+}
+
+/* Labels */
+label {
+    display: inline-block;
+    margin: 12px 0 8px;
+    color: #493b8a;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+/* Input fields and dropdowns */
+input,
+select {
+    width: 100%;
+    padding: 13px 14px;
+    margin-bottom: 12px;
+    border: 2px solid #dbe4ff;
+    border-radius: 10px;
+    background: #f8faff;
+    color: #27364b;
+    font-size: 15px;
+    outline: none;
+    transition: all 0.25s ease;
+}
+
+/* Focus effect */
+input:focus,
+select:focus {
+    border-color: #6c63ff;
+    background: #ffffff;
+    box-shadow: 0 0 0 4px rgba(108, 99, 255, 0.13);
+}
+
+/* Dropdown options */
+select {
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(110deg, #ff512f, #dd2476, #7b2ff7);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 6px 18px rgba(221, 36, 118, 0.25);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgba(123, 47, 247, 0.3);
+    background: linear-gradient(110deg, #7b2ff7, #dd2476, #ff512f);
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+    transform: none;
+}
+
+/* Prediction result */
+#result {
+    max-width: 850px;
+    margin: 25px auto;
+    padding: 22px;
+    border-radius: 15px;
+    background: linear-gradient(120deg, #d4fc79, #96e6a1);
+    border: 2px solid #79d69a;
+    color: #17633a;
+    text-align: center;
+    font-size: 21px;
+    font-weight: bold;
+    box-shadow: 0 7px 20px rgba(60, 160, 100, 0.15);
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    #predictionForm,
+    #result {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 25px;
+        padding: 25px 12px;
+    }
+
+    #predictionForm {
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    input,
+    select {
+        padding: 12px;
+    }
+
+    button {
+        font-size: 15px;
+    }
+
+    #result {
+        font-size: 17px;
+    }
+}
+</style>
+```
